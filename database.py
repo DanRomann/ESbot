@@ -5,7 +5,7 @@ db = SqliteDatabase('main.db')
 class User(Model):
     user_id = IntegerField(unique=True)
     username = CharField(null= True)
-    status = IntegerField(default=0)
+    status = TextField(null=True)
     class Meta:
         database = db
 
